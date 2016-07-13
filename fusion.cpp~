@@ -87,7 +87,8 @@ i=0;
   transformation_matrix (1, 1) = cos (theta);
 
   // A translation on Z axis (0.4 meters)
-  transformation_matrix (0, 3) = 3.0;
+  transformation_matrix (2, 3) = 3.0;
+  transformation_matrix (1, 3) = 5.0;
 
   // Display in terminal the transformation matrix
   std::cout << "Applying this rigid transformation to: cloud_in -> cloud_icp" << std::endl;

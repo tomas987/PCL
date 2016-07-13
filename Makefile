@@ -99,17 +99,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named PCL
+# Target rules for targets named 2data
 
 # Build rule for target.
-PCL: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 PCL
-.PHONY : PCL
+2data: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 2data
+.PHONY : 2data
 
 # fast build rule for target.
-PCL/fast:
-	$(MAKE) -f CMakeFiles/PCL.dir/build.make CMakeFiles/PCL.dir/build
-.PHONY : PCL/fast
+2data/fast:
+	$(MAKE) -f CMakeFiles/2data.dir/build.make CMakeFiles/2data.dir/build
+.PHONY : 2data/fast
 
 #=============================================================================
 # Target rules for targets named fusion
@@ -138,19 +138,6 @@ pcd_slide/fast:
 .PHONY : pcd_slide/fast
 
 #=============================================================================
-# Target rules for targets named pcd_turn
-
-# Build rule for target.
-pcd_turn: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 pcd_turn
-.PHONY : pcd_turn
-
-# fast build rule for target.
-pcd_turn/fast:
-	$(MAKE) -f CMakeFiles/pcd_turn.dir/build.make CMakeFiles/pcd_turn.dir/build
-.PHONY : pcd_turn/fast
-
-#=============================================================================
 # Target rules for targets named pcd_write
 
 # Build rule for target.
@@ -163,42 +150,29 @@ pcd_write/fast:
 	$(MAKE) -f CMakeFiles/pcd_write.dir/build.make CMakeFiles/pcd_write.dir/build
 .PHONY : pcd_write/fast
 
-#=============================================================================
-# Target rules for targets named registration
-
-# Build rule for target.
-registration: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 registration
-.PHONY : registration
-
-# fast build rule for target.
-registration/fast:
-	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/build
-.PHONY : registration/fast
-
-PCL.o: PCL.cpp.o
-.PHONY : PCL.o
+2data.o: 2data.cpp.o
+.PHONY : 2data.o
 
 # target to build an object file
-PCL.cpp.o:
-	$(MAKE) -f CMakeFiles/PCL.dir/build.make CMakeFiles/PCL.dir/PCL.cpp.o
-.PHONY : PCL.cpp.o
+2data.cpp.o:
+	$(MAKE) -f CMakeFiles/2data.dir/build.make CMakeFiles/2data.dir/2data.cpp.o
+.PHONY : 2data.cpp.o
 
-PCL.i: PCL.cpp.i
-.PHONY : PCL.i
+2data.i: 2data.cpp.i
+.PHONY : 2data.i
 
 # target to preprocess a source file
-PCL.cpp.i:
-	$(MAKE) -f CMakeFiles/PCL.dir/build.make CMakeFiles/PCL.dir/PCL.cpp.i
-.PHONY : PCL.cpp.i
+2data.cpp.i:
+	$(MAKE) -f CMakeFiles/2data.dir/build.make CMakeFiles/2data.dir/2data.cpp.i
+.PHONY : 2data.cpp.i
 
-PCL.s: PCL.cpp.s
-.PHONY : PCL.s
+2data.s: 2data.cpp.s
+.PHONY : 2data.s
 
 # target to generate assembly for a file
-PCL.cpp.s:
-	$(MAKE) -f CMakeFiles/PCL.dir/build.make CMakeFiles/PCL.dir/PCL.cpp.s
-.PHONY : PCL.cpp.s
+2data.cpp.s:
+	$(MAKE) -f CMakeFiles/2data.dir/build.make CMakeFiles/2data.dir/2data.cpp.s
+.PHONY : 2data.cpp.s
 
 fusion.o: fusion.cpp.o
 .PHONY : fusion.o
@@ -248,30 +222,6 @@ pcd_slide.cpp.s:
 	$(MAKE) -f CMakeFiles/pcd_slide.dir/build.make CMakeFiles/pcd_slide.dir/pcd_slide.cpp.s
 .PHONY : pcd_slide.cpp.s
 
-pcd_turn.o: pcd_turn.cpp.o
-.PHONY : pcd_turn.o
-
-# target to build an object file
-pcd_turn.cpp.o:
-	$(MAKE) -f CMakeFiles/pcd_turn.dir/build.make CMakeFiles/pcd_turn.dir/pcd_turn.cpp.o
-.PHONY : pcd_turn.cpp.o
-
-pcd_turn.i: pcd_turn.cpp.i
-.PHONY : pcd_turn.i
-
-# target to preprocess a source file
-pcd_turn.cpp.i:
-	$(MAKE) -f CMakeFiles/pcd_turn.dir/build.make CMakeFiles/pcd_turn.dir/pcd_turn.cpp.i
-.PHONY : pcd_turn.cpp.i
-
-pcd_turn.s: pcd_turn.cpp.s
-.PHONY : pcd_turn.s
-
-# target to generate assembly for a file
-pcd_turn.cpp.s:
-	$(MAKE) -f CMakeFiles/pcd_turn.dir/build.make CMakeFiles/pcd_turn.dir/pcd_turn.cpp.s
-.PHONY : pcd_turn.cpp.s
-
 pcd_write.o: pcd_write.cpp.o
 .PHONY : pcd_write.o
 
@@ -296,62 +246,30 @@ pcd_write.cpp.s:
 	$(MAKE) -f CMakeFiles/pcd_write.dir/build.make CMakeFiles/pcd_write.dir/pcd_write.cpp.s
 .PHONY : pcd_write.cpp.s
 
-registration.o: registration.cpp.o
-.PHONY : registration.o
-
-# target to build an object file
-registration.cpp.o:
-	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/registration.cpp.o
-.PHONY : registration.cpp.o
-
-registration.i: registration.cpp.i
-.PHONY : registration.i
-
-# target to preprocess a source file
-registration.cpp.i:
-	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/registration.cpp.i
-.PHONY : registration.cpp.i
-
-registration.s: registration.cpp.s
-.PHONY : registration.s
-
-# target to generate assembly for a file
-registration.cpp.s:
-	$(MAKE) -f CMakeFiles/registration.dir/build.make CMakeFiles/registration.dir/registration.cpp.s
-.PHONY : registration.cpp.s
-
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... PCL"
+	@echo "... 2data"
 	@echo "... edit_cache"
 	@echo "... fusion"
 	@echo "... pcd_slide"
-	@echo "... pcd_turn"
 	@echo "... pcd_write"
 	@echo "... rebuild_cache"
-	@echo "... registration"
-	@echo "... PCL.o"
-	@echo "... PCL.i"
-	@echo "... PCL.s"
+	@echo "... 2data.o"
+	@echo "... 2data.i"
+	@echo "... 2data.s"
 	@echo "... fusion.o"
 	@echo "... fusion.i"
 	@echo "... fusion.s"
 	@echo "... pcd_slide.o"
 	@echo "... pcd_slide.i"
 	@echo "... pcd_slide.s"
-	@echo "... pcd_turn.o"
-	@echo "... pcd_turn.i"
-	@echo "... pcd_turn.s"
 	@echo "... pcd_write.o"
 	@echo "... pcd_write.i"
 	@echo "... pcd_write.s"
-	@echo "... registration.o"
-	@echo "... registration.i"
-	@echo "... registration.s"
 .PHONY : help
 
 

@@ -1120,20 +1120,6 @@ pcl/pcl_macros.h
 pcl/conversions.h
 -
 
-/usr/include/pcl-1.7/pcl/common/copy_point.h
-pcl/common/impl/copy_point.hpp
--
-
-/usr/include/pcl-1.7/pcl/common/impl/copy_point.hpp
-pcl/point_types.h
--
-pcl/point_traits.h
--
-pcl/for_each_type.h
--
-pcl/common/concatenate.h
--
-
 /usr/include/pcl-1.7/pcl/common/impl/io.hpp
 pcl/common/concatenate.h
 -

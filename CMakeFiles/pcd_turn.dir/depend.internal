@@ -220,11 +220,8 @@ CMakeFiles/pcd_turn.dir/pcd_turn.cpp.o
  /usr/include/pcl-1.7/pcl/cloud_iterator.h
  /usr/include/pcl-1.7/pcl/common/centroid.h
  /usr/include/pcl-1.7/pcl/common/concatenate.h
- /usr/include/pcl-1.7/pcl/common/copy_point.h
  /usr/include/pcl-1.7/pcl/common/eigen.h
- /usr/include/pcl-1.7/pcl/common/impl/accumulators.hpp
  /usr/include/pcl-1.7/pcl/common/impl/centroid.hpp
- /usr/include/pcl-1.7/pcl/common/impl/copy_point.hpp
  /usr/include/pcl-1.7/pcl/common/impl/eigen.hpp
  /usr/include/pcl-1.7/pcl/common/impl/io.hpp
  /usr/include/pcl-1.7/pcl/common/impl/transforms.hpp

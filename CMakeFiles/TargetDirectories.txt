@@ -1,6 +1,4 @@
-/home/itolab/work/toma/MCL/PCL/CMakeFiles/PCL.dir
+/home/itolab/work/toma/MCL/PCL/CMakeFiles/2data.dir
 /home/itolab/work/toma/MCL/PCL/CMakeFiles/fusion.dir
 /home/itolab/work/toma/MCL/PCL/CMakeFiles/pcd_slide.dir
-/home/itolab/work/toma/MCL/PCL/CMakeFiles/pcd_turn.dir
 /home/itolab/work/toma/MCL/PCL/CMakeFiles/pcd_write.dir
-/home/itolab/work/toma/MCL/PCL/CMakeFiles/registration.dir
